@@ -1,6 +1,9 @@
+//Import Lib
 #include <stdio.h>
 #include <math.h>
 #include <conio.h>
+
+//Define Value PI
 #define PI 3.14
 
 int main() {

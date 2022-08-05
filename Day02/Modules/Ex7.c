@@ -1,6 +1,9 @@
+//Import Lib
 #include <stdio.h>
 #include <math.h>
 #include <conio.h>
+
+//Define Value PI, Acceleration
 #define Acceleration 9.81
 #define PI 3.14
 

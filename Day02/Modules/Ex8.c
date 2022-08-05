@@ -1,6 +1,9 @@
+//Import Lib
 #include <stdio.h>
 #include <math.h>
 #include <conio.h>
+
+//Define Value Gravity
 #define GravitationConstant 6.67E-11
 
 int main() {

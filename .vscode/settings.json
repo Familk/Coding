@@ -9,6 +9,11 @@
         "**/*.exe": true
     },
     "files.associations": {
-        "stdio.h": "c"
-    }
+        "stdio.h": "c",
+        "math.h": "c",
+        "conio.h": "c"
+    },
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden"
+
 }

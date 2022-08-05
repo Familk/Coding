@@ -1,9 +1,11 @@
+//Import Lib
 #include <stdio.h>
 #include <math.h>
 #include <conio.h>
 
+//Main Run
 int main() {
-    int a, b, sum, sub, multi, divide, mod;
+    int a, b, sum, sub, multi, divide, mod; //Define Value
 
     printf("Input Integer A and B: ");
     scanf("%d" "%d", &a ,&b);
