@@ -14,6 +14,7 @@
         "conio.h": "c"
     },
     "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden"
+    "editor.scrollbar.vertical": "hidden",
+    "C_Cpp.errorSquiggles": "Disabled"
 
 }
