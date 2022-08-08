@@ -4,38 +4,29 @@
 #include <conio.h>
 
 int main() {
-    char Option;
-    float NumberA, NumberB;
+    float NumberA, NumberB, NumberC, Delta, X1, X2;
 
-    printf("Choose an operator ( + , - , * , / ): ");
-    scanf("%c", &Option);
-    printf("Input Number A and B: ");
-    scanf("%f %f", &NumberA, &NumberB);
+    printf("Input Number A, B and C: ");
+    scanf("%f", &NumberA, &NumberB, &NumberC);
+    
+    Delta = pow(NumberB, 2) - (4*NumberA*NumberC);
+    
+    if (Delta > 0) {
+        X1 = (-NumberB + sqrt(Delta)) / 2*NumberA;
+        X2 = (-NumberB - sqrt(Delta)) / 2*NumberA;
 
-    switch (Option) {
-        case '+':
-            printf("Number A Inputed : %0.2f\n", NumberA);
-            printf("Number B Inputed : %0.2f\n", NumberB);
-            printf("Sum of A and B : %0.2f\n", NumberA + NumberB);
-            break;
-        case '-':
-            printf("Number A Inputed : %0.2f\n", NumberA);
-            printf("Number B Inputed : %0.2f\n", NumberB);
-            printf("Sum of A and B : %0.2f\n", NumberA - NumberB);
-            break;
-        case '*':
-            printf("Number A Inputed : %0.2f\n", NumberA);
-            printf("Number B Inputed : %0.2f\n", NumberB);
-            printf("Sum of A and B : %0.2f\n", NumberA * NumberB);
-            break;
-        case '/':
-            printf("Number A Inputed : %0.2f\n", NumberA);
-            printf("Number B Inputed : %0.2f\n", NumberB);
-            printf("Sum of A and B : %0.2f\n", NumberA / NumberB);
-            break;
-        default:
-            printf("Error Input! Please input again.");
-            break;
+        printf("The equation has 2 solution\n");
+        printf("First solution : %0.4f\n", X1);
+        printf("Second solution : %0.4f\n", X2);
+    }
+    if (Delta == 0)
+    {
+        X1 = (-NumberB) / 2*NumberA;
+        printf("The equation has double solution\n");
+        printf("Double solution : %0.4f\n", X1);
+    }
+    else {
+        printf("The equation has no solution\n");
     }
 
     return 0;

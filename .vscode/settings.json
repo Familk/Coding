@@ -13,6 +13,7 @@
         "math.h": "c",
         "conio.h": "c"
     },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "C_Cpp.errorSquiggles": "Disabled"
