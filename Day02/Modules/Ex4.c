@@ -18,6 +18,9 @@ int main() {
         printf("Perimeter Of Triangle : %0.2f\n", Perimeter);
         printf("Area Of Triangle : %0.2f\n", Area);
     }
-    
+    else {
+        printf("Error: This isn't a Triangle");
+    }
+
     return 0;
 }
